@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-		sh 'docker build -t nginx-docker .'
+		sh 'docker build -t snaredla89/p1:nginx-docker .'
 		
                 // 
             }
