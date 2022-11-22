@@ -8,9 +8,9 @@ pipeline {
                 // 
             }
         }
-        stage('Test') { 
+        stage('Push') { 
             steps {
-		sh 'echo Skip'
+		sh 'docker push snaredla89/p1:nginx-docker'
                 // 
             }
         }
