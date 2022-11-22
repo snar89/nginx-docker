@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-		sh 'echo Skip'
+		sh 'kubectl apply -f nginx-static.yml'
                 // 
             }
         }
