@@ -10,9 +10,8 @@ pipeline {
         }
         stage('Push') { 
             steps {
-		withCredentials([usernamePassword(credentialsId: 'dockersecret', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
-        	sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-          sh 'docker push snaredla89/p1:latest'
+		sh 'docker login -u snaredla89 -p Welcome2docker'
+          	sh 'docker push snaredla89/p1:latest'
                 // 
             }
         }
